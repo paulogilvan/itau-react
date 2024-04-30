@@ -3,7 +3,11 @@ import styled from 'styled-components';
 export const Section = styled.section`
     width: 100%;
     height: 965px;
-    padding-top: 8rem;
+    padding-top: 8rem;    
+
+    @media(max-width: 425px) {
+        padding-top: 4rem;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -36,6 +40,11 @@ export const H2 = styled.h2`
     font-weight: bold;
     line-height: 3.81rem;
     margin-bottom: 1.5rem;
+
+    @media(max-width: 768px) {
+        font-size: 2.5rem;
+        line-height: 2.81rem;
+    }
 `;
 
 export const P = styled.p`
@@ -43,6 +52,10 @@ export const P = styled.p`
     max-width: 34.62rem;
     margin-bottom: 4.25rem;
     color: #4e4b59;
+
+    @media(max-width: 768px) {
+        font-size: 1rem;        
+    }
 `;
 
 export const Ul = styled.ul`
@@ -63,4 +76,8 @@ export const Li = styled.li`
 
 export const Img = styled.img`
     transform: translateX(-30%);
+
+    @media(max-width: 768px) {
+        display: none;
+    }
 `;

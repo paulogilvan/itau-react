@@ -29,12 +29,16 @@ export const Img = styled.img`
     cursor: pointer;
 `;
 
-export const Ul = styled.ul`
+export const Ul = styled.ul<{showMenu: boolean}>`
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin: 0 20px 0 0;
+    margin: 0 20px 0 0;    
+
+    @media(max-width: 425px) {
+        display: ${showMenu => showMenu ? 'block' : 'false'};
+    } 
 `;
 
 export const Li = styled.li`
@@ -49,6 +53,12 @@ export const ButtonAccessHeader = styled.div`
     background-color: #106eb0;
     border-radius: 5px;
     cursor: pointer;
+
+    @media(max-width: 425px) {
+        height: 50%;
+        padding: 0 10px;
+        margin-right: 120px;
+    }
 `;
 
 export const ButtonAccess = styled.button`
@@ -62,3 +72,28 @@ export const ButtonAccess = styled.button`
     height: 100%;
     cursor: pointer;
 `;
+
+export const MenuHambuger = styled.div`
+    @media(max-width: 425px) {
+        width: 1.97rem;
+        height: 2.87rem;
+        position: absolute;
+        right: 1.25rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+    
+`;
+
+export const SpanLine = styled.span`
+    @media(max-width: 425px) {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #FFF;
+    }    
+`;
+

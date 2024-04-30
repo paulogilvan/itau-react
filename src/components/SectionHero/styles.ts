@@ -8,6 +8,10 @@ export const Section = styled.section`
     background-position: center;
     width: 100%;
     height: 704px;
+
+    @media(max-width: 768px) {
+        height: 550px;
+    }
 `;
 
 export const Container = styled.div`
@@ -29,6 +33,10 @@ export const H1 = styled.h1`
     color: #FFF;
     font-size: 4.5rem;
     margin-bottom: 1rem;
+
+    @media(max-width: 768px) {
+        font-size: 3.5rem;
+    }
 `;
 
 export const P = styled.p`
@@ -36,6 +44,10 @@ export const P = styled.p`
     font-size: 1.25rem;
     max-width: 25.5rem;
     margin-bottom: 2rem;
+
+    @media(max-width: 768px) {
+        font-size: 1rem;
+    }
 `;
 
 export const ButtonArea = styled.div`
@@ -48,6 +60,10 @@ export const ButtonApps = styled.button`
     background-color: transparent;
     border: none;    
     cursor: pointer;
+
+    @media(max-width: 768px) {
+        font-size: 50px;
+    }
 `;
 
 export const ButtonExplore = styled.button`
@@ -65,4 +81,12 @@ export const Span = styled.span`
 
 export const WomanImage = styled.img`
     margin-right: -2.56rem;
+
+    @media(max-width: 768px) {        
+        height: 400px;
+    } 
+
+    @media(max-width: 425px) {
+        display: none;
+    }
 `;
