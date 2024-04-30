@@ -37,7 +37,7 @@ export const Ul = styled.ul<{showMenu: boolean}>`
     margin: 0 20px 0 0;    
 
     @media(max-width: 425px) {
-        display: ${showMenu => showMenu ? 'block' : 'false'};
+        display: ${showMenu => showMenu ? 'none' : 'block'};
     } 
 `;
 
